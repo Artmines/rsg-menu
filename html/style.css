@@ -1,0 +1,172 @@
+/* Nice font for button from Google Fonts */
+
+@import url('https://fonts.cdnfonts.com/css/chinese-rocks');
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(188, 185, 14, 0.737);
+    border-radius: 10px;
+    display: none;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #760808f2;
+    border-radius: 13px;
+    display: none;
+}
+
+#container {
+    position: absolute;
+    height: 900px;
+    width: 600px;
+    display: none;
+    top: 10%;
+    right: 20%;
+    border-radius: 5px;
+    background-image: url('https://cdn.discordapp.com/attachments/1087918341022294016/1208475169899937882/inkroller_1a.png?ex=65e36b34&is=65d0f634&hm=d9cc0e51a2d1f8ce4b1a3ec0ac2f50d1912f2464ee57a1a883e9a01b507bdc6a&') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 97%;
+    
+}
+.button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row !important;
+    gap: 10px;
+    background-image: url('https://cdn.discordapp.com/attachments/1087918341022294016/1208475170990202980/selection_box_bg_1d.png?ex=65e36b35&is=65d0f635&hm=564e947c903a78d5b20ffcfb8da09ef2c2641570bca5ad705ccdb3d86e968801&') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 97%;
+}
+.title {
+    cursor: default;
+    gap: 10px;
+    display: flex;
+    flex-direction: row !important;
+}
+
+#buttons {
+    max-height: 75vh;
+    width: 580px;
+    overflow-x: none;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+html,
+body {
+    background-image: url('https://cdn.discordapp.com/attachments/1087918341022294016/1208475169899937882/inkroller_1a.png?ex=65e36b34&is=65d0f634&hm=d9cc0e51a2d1f8ce4b1a3ec0ac2f50d1912f2464ee57a1a883e9a01b507bdc6a&') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 97%;
+}
+
+.button {
+    width: 480px;
+    height: 100px;
+    background-image: url('https://cdn.discordapp.com/attachments/1087918341022294016/1208475170990202980/selection_box_bg_1d.png?ex=65e36b35&is=65d0f635&hm=564e947c903a78d5b20ffcfb8da09ef2c2641570bca5ad705ccdb3d86e968801&') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 97%;
+    color: #fff; /* Set the text color to white */
+    text-shadow: 2px 2px 4px #000000; /* Add text shadow if desired */
+    margin: auto;
+    position: relative;
+    top: 10%;
+    margin-top: 0.5rem;
+    overflow: visible;
+    padding: 0.45rem;
+    border-radius: 0.15rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0rem 0rem 0.5rem 0.05rem #000000;
+    cursor: pointer;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: left;
+    font-size: 32px;
+    margin-right: 5px;
+}
+
+.button:hover {
+    background-image: url('https://cdn.discordapp.com/attachments/1087918341022294016/1208475170990202980/selection_box_bg_1d.png?ex=65e36b35&is=65d0f635&hm=564e947c903a78d5b20ffcfb8da09ef2c2641570bca5ad705ccdb3d86e968801&');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.title {
+    width: 560px;
+    height: 100px;
+    background-image: url('https://cdn.discordapp.com/attachments/1087918341022294016/1208475170151604365/menu_header_1a.png?ex=65e36b34&is=65d0f634&hm=4046cd7c0ab34e5ebce77c297d03191f3705e966797b29972176d6526e45a62d&');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+	color: rgb(239, 228, 205);
+    text-shadow:2px 2px 4px #000000;
+    margin: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 10%;
+    margin-top: 0.5rem;
+    overflow: hidden;
+    padding: 0.45rem;
+    border-radius: 0.15rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0rem 0rem 0.5rem 0.05rem #000000;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+    font-size: 80px;
+}
+
+div.column > div.header {
+
+}
+
+.disabled {
+    background: rgba(102, 102, 102, 0.9) !important;
+    cursor: default;
+}
+
+div > .text {
+    flex-direction: column;
+    font-size: 1.45rem;
+    overflow: hidden;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+div > .header {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: left;
+    overflow: wrap;
+	color: rgb(239, 228, 205);
+    text-shadow:2px 2px 4px #000000;
+    font-size: 2.2rem;
+    font-weight: 400;
+    overflow: hidden;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+    margin-top: 16px;
+    margin-bottom: 5px;
+}
