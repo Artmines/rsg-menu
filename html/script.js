@@ -1,5 +1,6 @@
 let buttonParams = [];
 
+const container = document.getElementById('container');
 const openMenu = (data = null) => {
     let html = "";
     data.forEach((item, index) => {
@@ -11,9 +12,10 @@ const openMenu = (data = null) => {
             let icon = item.icon;
             html += getButtonRender(header, message, index, isMenuHeader, isDisabled, icon);  
             if (item.params) buttonParams[index] = item.params;
+            container.style.display = 'block'; // Show the container
         }
     });
-    $('#container').css('display', 'block');
+
     $("#buttons").html(html);
 
     $('.button').click(function() {
@@ -26,12 +28,11 @@ const openMenu = (data = null) => {
 
 const getButtonRender = (header, message = null, id, isMenuHeader, isDisabled, icon) => {
     return `
-        <div class="${isMenuHeader ? "menu-header" : "button"} ${isDisabled ? "disabled" : ""}" id="${id}">
-            <div class="icon"> <img src="nui://${icon}" width="30px" onerror="this.onerror=null; this.remove();"> <i class="${icon}" onerror="this.onerror=null; this.remove();"></i> </div>
-            ${isMenuHeader ? `<div class="title">${header}</div>` : ""}
-            <div class="column">
-                ${!isMenuHeader ? `<div class="header">${header}</div>` : ""}
-                ${message ? `<div class="text">${message}</div>` : ""}
+        <div class="${isMenuHeader ? "title" : "button"} ${isDisabled ? "disabled" : ""}" id="${id}">
+            <div class="icon"> <img src=nui://${icon} width=30px onerror="this.onerror=null; this.remove();"> <i class="${icon}" onerror="this.onerror=null; this.remove();"></i> </div>
+            <div className="column">
+            <div class="header"> ${header}</div>
+            ${message ? `<div class="text">${message}</div>` : ""}
             </div>
         </div>
     `;
@@ -40,7 +41,7 @@ const getButtonRender = (header, message = null, id, isMenuHeader, isDisabled, i
 const closeMenu = () => {
     $("#buttons").html(" ");
     buttonParams = [];
-    $('#container').css('display', 'none');
+    container.style.display = 'none'; // Show the container
 };
 
 const postData = (id) => {
