@@ -1,7 +1,7 @@
 # rsg-menu
 Menu System for the RSGCore Framework edited by Artmines
 
-[Quantum Core](https://discord.gg/kJ8ZrGM8TS)
+[Quantum Projects Discord](https://discord.gg/kJ8ZrGM8TS)
 
 Uses same functions even fas fa icons if wanted
 
