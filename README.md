@@ -1,5 +1,5 @@
 # rsg-menu
-Menu System for the RSGCore Framework edited by Pablo Enterprises AKA Quantum Project
+Menu System for the RSGCore Framework edited by Artmines
 
 Uses same functions even fas fa icons if wanted
 
