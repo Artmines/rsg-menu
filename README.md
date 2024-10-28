@@ -1,6 +1,8 @@
 # rsg-menu
 Menu System for the RSGCore Framework edited by Pablo Enterprises AKA Quantum Project
 
+https://discord.gg/VnvQR3WP
+
 Uses same functions even fas fa icons if wanted
 
 # Preview
